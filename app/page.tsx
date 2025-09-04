@@ -88,35 +88,40 @@ export default function BlindDateHackathon() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <div className="fixed inset-0 bg-black">
-        {/* Pixelated Stars */}
         <div className="absolute inset-0">
-          {/* Large stars */}
-          <div className="absolute top-10 left-10 w-3 h-3 bg-white animate-float-slow"></div>
-          <div className="absolute top-20 right-20 w-2 h-2 bg-cyan-400 animate-float-medium"></div>
-          <div className="absolute top-32 left-1/4 w-4 h-4 bg-pink-400 animate-float-fast"></div>
-          <div className="absolute top-40 right-1/3 w-2 h-2 bg-yellow-400 animate-float-slow"></div>
-          <div className="absolute top-60 left-3/4 w-3 h-3 bg-purple-400 animate-float-medium"></div>
+          {/* Large twinkling dots */}
+          <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full animate-float-slow opacity-80"></div>
+          <div className="absolute top-20 right-20 w-1.5 h-1.5 bg-white rounded-full animate-float-medium opacity-90"></div>
+          <div className="absolute top-32 left-1/4 w-2.5 h-2.5 bg-white rounded-full animate-float-fast opacity-70"></div>
+          <div className="absolute top-40 right-1/3 w-1.5 h-1.5 bg-white rounded-full animate-float-slow opacity-85"></div>
+          <div className="absolute top-60 left-3/4 w-2 h-2 bg-white rounded-full animate-float-medium opacity-75"></div>
 
-          {/* Medium stars */}
-          <div className="absolute top-80 right-10 w-2 h-2 bg-white animate-float-fast"></div>
-          <div className="absolute top-96 left-1/2 w-3 h-3 bg-cyan-300 animate-float-slow"></div>
-          <div className="absolute bottom-80 left-20 w-2 h-2 bg-pink-300 animate-float-medium"></div>
-          <div className="absolute bottom-60 right-1/4 w-4 h-4 bg-yellow-300 animate-float-fast"></div>
-          <div className="absolute bottom-40 left-2/3 w-2 h-2 bg-purple-300 animate-float-slow"></div>
+          {/* Medium twinkling dots */}
+          <div className="absolute top-80 right-10 w-1.5 h-1.5 bg-white rounded-full animate-float-fast opacity-80"></div>
+          <div className="absolute top-96 left-1/2 w-2 h-2 bg-white rounded-full animate-float-slow opacity-90"></div>
+          <div className="absolute bottom-80 left-20 w-1.5 h-1.5 bg-white rounded-full animate-float-medium opacity-70"></div>
+          <div className="absolute bottom-60 right-1/4 w-2.5 h-2.5 bg-white rounded-full animate-float-fast opacity-85"></div>
+          <div className="absolute bottom-40 left-2/3 w-1.5 h-1.5 bg-white rounded-full animate-float-slow opacity-75"></div>
 
-          {/* Small stars */}
-          <div className="absolute top-24 left-1/3 w-1 h-1 bg-white animate-float-medium"></div>
-          <div className="absolute top-48 right-1/2 w-1 h-1 bg-cyan-200 animate-float-fast"></div>
-          <div className="absolute top-72 left-3/5 w-1 h-1 bg-pink-200 animate-float-slow"></div>
-          <div className="absolute bottom-96 right-1/3 w-1 h-1 bg-yellow-200 animate-float-medium"></div>
-          <div className="absolute bottom-72 left-1/4 w-1 h-1 bg-purple-200 animate-float-fast"></div>
-          <div className="absolute bottom-48 right-2/3 w-1 h-1 bg-white animate-float-slow"></div>
+          {/* Small twinkling dots */}
+          <div className="absolute top-24 left-1/3 w-1 h-1 bg-white rounded-full animate-float-medium opacity-60"></div>
+          <div className="absolute top-48 right-1/2 w-1 h-1 bg-white rounded-full animate-float-fast opacity-70"></div>
+          <div className="absolute top-72 left-3/5 w-1 h-1 bg-white rounded-full animate-float-slow opacity-80"></div>
+          <div className="absolute bottom-96 right-1/3 w-1 h-1 bg-white rounded-full animate-float-medium opacity-65"></div>
+          <div className="absolute bottom-72 left-1/4 w-1 h-1 bg-white rounded-full animate-float-fast opacity-75"></div>
+          <div className="absolute bottom-48 right-2/3 w-1 h-1 bg-white rounded-full animate-float-slow opacity-70"></div>
 
-          {/* Additional scattered stars */}
-          <div className="absolute top-16 right-1/4 w-2 h-2 bg-cyan-500 animate-float-fast"></div>
-          <div className="absolute top-56 left-1/6 w-1 h-1 bg-pink-500 animate-float-medium"></div>
-          <div className="absolute bottom-32 right-1/5 w-3 h-3 bg-yellow-500 animate-float-slow"></div>
-          <div className="absolute bottom-16 left-1/2 w-2 h-2 bg-purple-500 animate-float-fast"></div>
+          {/* Additional scattered twinkling dots */}
+          <div className="absolute top-16 right-1/4 w-1.5 h-1.5 bg-white rounded-full animate-float-fast opacity-85"></div>
+          <div className="absolute top-56 left-1/6 w-1 h-1 bg-white rounded-full animate-float-medium opacity-60"></div>
+          <div className="absolute bottom-32 right-1/5 w-2 h-2 bg-white rounded-full animate-float-slow opacity-80"></div>
+          <div className="absolute bottom-16 left-1/2 w-1.5 h-1.5 bg-white rounded-full animate-float-fast opacity-75"></div>
+
+          {/* Extra tiny stars for depth */}
+          <div className="absolute top-36 left-1/5 w-0.5 h-0.5 bg-white rounded-full animate-float-slow opacity-50"></div>
+          <div className="absolute top-64 right-1/6 w-0.5 h-0.5 bg-white rounded-full animate-float-medium opacity-60"></div>
+          <div className="absolute bottom-88 left-3/4 w-0.5 h-0.5 bg-white rounded-full animate-float-fast opacity-40"></div>
+          <div className="absolute bottom-56 right-1/2 w-0.5 h-0.5 bg-white rounded-full animate-float-slow opacity-55"></div>
         </div>
       </div>
 
@@ -301,15 +306,15 @@ export default function BlindDateHackathon() {
         </section>
 
         {/* Footer */}
-        <footer className="py-12 px-4 border-t border-gray-800 bg-white">
+        <footer className="py-12 px-4 border-t border-white/20 bg-white/10 backdrop-blur-md">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6">
-              <div className="w-16 h-16 mx-auto bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center border-2 border-gray-800">
+              <div className="w-16 h-16 mx-auto bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center border-2 border-white/30">
                 <Heart className="w-8 h-8 text-white" />
               </div>
             </div>
-            <p className="font-pixel text-gray-800 text-xs mb-4">BLIND DATE HACKATHON 2025</p>
-            <p className="text-gray-700 text-sm text-balance">
+            <p className="font-pixel text-white text-xs mb-4">BLIND DATE HACKATHON 2025</p>
+            <p className="text-white/80 text-sm text-balance">
               Organized with ❤️ by the AIML Dept at Vidya Academy of Science and Technology
             </p>
           </div>
