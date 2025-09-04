@@ -12,12 +12,15 @@ export default function BlindDateHackathon() {
     }
   }
 
+  const openGoogleMaps = () => {
+    const address = "Oracle Lab, VAST"
+    const mapsUrl = `https://maps.app.goo.gl/Wjf3JAqFMPEmyGZE6`
+    window.open(mapsUrl, "_blank")
+  }
+
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
-      {/* Animated Background */}
-      <div className="fixed inset-0 bg-retro-gradient">
-        <div className="absolute inset-0 bg-stars opacity-30"></div>
-      </div>
+      <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
 
       {/* Content */}
       <div className="relative z-10">
@@ -111,11 +114,14 @@ export default function BlindDateHackathon() {
                 </CardContent>
               </Card>
 
-              <Card className="game-card p-6 text-center">
+              <Card
+                className="game-card p-6 text-center cursor-pointer hover:scale-105 transition-transform"
+                onClick={openGoogleMaps}
+              >
                 <CardContent className="p-0">
                   <MapPin className="w-12 h-12 text-neon-cyan mx-auto mb-4" />
                   <h3 className="font-pixel text-white text-sm mb-2">LOCATION</h3>
-                  <p className="text-gray-300 font-pixel text-xs text-balance">Oracle Lab, Vidya Academy</p>
+                  <p className="text-gray-300 font-pixel text-xs text-balance">Oracle Lab, VAST</p>
                 </CardContent>
               </Card>
 

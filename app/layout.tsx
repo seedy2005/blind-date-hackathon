@@ -1,11 +1,20 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
-import { Press_Start_2P } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
+import { Inter, JetBrains_Mono, Press_Start_2P } from "next/font/google"
 import { Suspense } from "react"
 import "./globals.css"
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains-mono",
+})
 
 const pressStart2P = Press_Start_2P({
   weight: "400",
@@ -27,9 +36,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${pressStart2P.variable}`}>
+      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} ${pressStart2P.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
       </body>
     </html>
   )

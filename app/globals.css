@@ -37,6 +37,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --font-inter: "Inter", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+  --font-press-start: "Press Start 2P", cursive;
 }
 
 .dark {
@@ -75,8 +78,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Updated font variables to use Inter and JetBrains Mono instead of Geist */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
   /* Added Press Start 2P font variable for retro gaming */
   --font-press-start: var(--font-press-start);
   --color-background: var(--background);
@@ -196,6 +200,21 @@
     border-image: url("data:image/svg+xml,%3csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m0,0 l0,8 l8,0 l0,8 l8,0 l0,76 l-8,0 l0,8 l-8,0 l0,8 l84,0 l0,-8 l8,0 l0,-8 l8,0 l0,-76 l-8,0 l0,-8 l-8,0 l0,-8 z' fill='%2300ffff'/%3e%3c/svg%3e")
       8;
   }
+
+  .animate-gradient-shift {
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  .animate-gradient-shift-reverse {
+    background-size: 400% 400%;
+    animation: gradient-shift-reverse 20s ease infinite;
+  }
+
+  .animate-gradient-pulse {
+    background-size: 400% 400%;
+    animation: gradient-pulse 25s ease infinite;
+  }
 }
 
 @keyframes gradient-shift {
@@ -207,6 +226,30 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-shift-reverse {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    background-position: 0% 50%;
+  }
+  50% {
+    opacity: 0.6;
+    background-position: 100% 50%;
   }
 }
 
