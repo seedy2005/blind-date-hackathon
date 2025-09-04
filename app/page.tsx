@@ -138,11 +138,11 @@ export default function BlindDateHackathon() {
           <h1 className="font-pixel text-neon-pink text-4xl md:text-6xl lg:text-7xl mb-4 text-balance animate-pulse-glow">
             BLIND DATE
           </h1>
-          <h2 className="font-pixel text-neon-cyan text-2xl md:text-4xl lg:text-5xl mb-6 text-balance animate-pulse-glow">
+          <h2 className="font-pixel text-neon-cyan text-2xl md:text-4xl lg">
             HACKATHON
           </h2>
 
-          <p className="font-pixel text-neon-yellow text-sm md:text-lg mb-8 text-balance animate-pulse-glow">
+          <p className="font-pixel text-neon-yellow text-sm md">
             Mystery Match? One Day Hackathon
           </p>
 
@@ -172,7 +172,7 @@ export default function BlindDateHackathon() {
         {/* About Section */}
         <section className="py-20 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-pixel text-neon-pink text-3xl md:text-4xl text-center mb-12 text-balance animate-pulse-glow">
+            <h2 className="font-pixel text-neon-pink text-3xl md">
               ABOUT THE GAME
             </h2>
 
