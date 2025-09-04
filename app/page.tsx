@@ -157,7 +157,7 @@ export default function BlindDateHackathon() {
             </div>
             <div className="flex items-center gap-2 font-pixel text-white text-xs md:text-sm">
               <PixelTrophy className="w-4 h-4 text-neon-yellow" />
-              ₹6,000 Prize Pool
+              6,000/- Prize Pool
             </div>
           </div>
 
@@ -234,7 +234,7 @@ export default function BlindDateHackathon() {
                 <CardContent className="p-0">
                   <PixelTrophy className="w-12 h-12 text-neon-yellow mx-auto mb-4" />
                   <h3 className="font-pixel text-white text-sm mb-2">PRIZE POOL</h3>
-                  <p className="text-gray-300 font-pixel text-xs">₹6,000 Total</p>
+                  <p className="text-gray-300 font-pixel text-xs">6,000/- Total</p>
                 </CardContent>
               </Card>
 
