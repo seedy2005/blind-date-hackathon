@@ -177,7 +177,7 @@ export default function BlindDateHackathon() {
                       className="arcade-button font-pixel text-white text-xs px-6 py-3 rounded-lg"
                       onClick={() => window.open("https://wa.me/9645437318", "_blank")}
                     >
-                      CHAT ON WHATSAPP
+                      CONTACT
                     </Button>
                   </CardContent>
                 </Card>
@@ -193,7 +193,7 @@ export default function BlindDateHackathon() {
                       className="arcade-button font-pixel text-white text-xs px-6 py-3 rounded-lg"
                       onClick={() => window.open("https://wa.me/8891240778", "_blank")}
                     >
-                      CHAT ON WHATSAPP
+                      CONTACT
                     </Button>
                   </CardContent>
                 </Card>
