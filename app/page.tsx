@@ -135,14 +135,10 @@ export default function BlindDateHackathon() {
             </div>
           </div>
 
-          <h1 className="font-pixel text-neon-pink text-4xl md:text-6xl lg:text-7xl mb-4 animate-pulse-glow text-balance">
-            BLIND DATE
-          </h1>
-          <h2 className="font-pixel text-neon-cyan text-2xl md:text-4xl lg:text-5xl mb-6 animate-pulse-glow text-balance">
-            HACKATHON
-          </h2>
+          <h1 className="font-pixel text-neon-pink text-4xl md:text-6xl lg:text-7xl mb-4 text-balance">BLIND DATE</h1>
+          <h2 className="font-pixel text-neon-cyan text-2xl md:text-4xl lg:text-5xl mb-6 text-balance">HACKATHON</h2>
 
-          <p className="font-pixel text-neon-yellow text-sm md:text-lg mb-8 animate-pulse-glow text-balance">
+          <p className="font-pixel text-neon-yellow text-sm md:text-lg mb-8 text-balance">
             Mystery Match? One Day Hackathon
           </p>
 
@@ -172,7 +168,7 @@ export default function BlindDateHackathon() {
         {/* About Section */}
         <section className="py-20 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-pixel text-neon-pink text-3xl md:text-4xl text-center mb-12 animate-pulse-glow text-balance">
+            <h2 className="font-pixel text-neon-pink text-3xl md:text-4xl text-center mb-12 text-balance">
               ABOUT THE GAME
             </h2>
 
@@ -204,7 +200,7 @@ export default function BlindDateHackathon() {
         {/* Event Details */}
         <section id="event-details" className="py-20 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-pixel text-neon-cyan text-3xl md:text-4xl text-center mb-12 animate-pulse-glow text-balance">
+            <h2 className="font-pixel text-neon-cyan text-3xl md:text-4xl text-center mb-12 text-balance">
               EVENT DETAILS
             </h2>
 
@@ -250,9 +246,7 @@ export default function BlindDateHackathon() {
         {/* Register Section */}
         <section className="py-20 px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="font-pixel text-neon-yellow text-3xl md:text-4xl mb-8 animate-pulse-glow text-balance">
-              READY TO PLAY?
-            </h2>
+            <h2 className="font-pixel text-neon-yellow text-3xl md:text-4xl mb-8 text-balance">READY TO PLAY?</h2>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed text-balance">
               Join the most exciting hackathon of the year! Meet new people, build amazing projects, and compete for
               awesome prizes.
@@ -265,9 +259,7 @@ export default function BlindDateHackathon() {
             </Button>
 
             <div className="mt-16">
-              <h3 className="font-pixel text-neon-cyan text-xl md:text-2xl mb-8 animate-pulse-glow text-balance">
-                CONTACT COORDINATORS
-              </h3>
+              <h3 className="font-pixel text-neon-cyan text-xl md:text-2xl mb-8 text-balance">CONTACT COORDINATORS</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <Card className="game-card p-6">
                   <CardContent className="p-0 text-center">
