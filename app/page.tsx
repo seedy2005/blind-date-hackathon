@@ -149,7 +149,7 @@ export default function BlindDateHackathon() {
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-12">
             <div className="flex items-center gap-2 font-pixel text-white text-xs md:text-sm">
               <PixelCalendar className="w-4 h-4 text-neon-pink" />
-              15/09/2025
+              16/09/2025
             </div>
             <div className="flex items-center gap-2 font-pixel text-white text-xs md:text-sm">
               <PixelMapPin className="w-4 h-4 text-neon-cyan" />
@@ -215,7 +215,7 @@ export default function BlindDateHackathon() {
                 <CardContent className="p-0">
                   <PixelCalendar className="w-12 h-12 text-neon-pink mx-auto mb-4" />
                   <h3 className="font-pixel text-white text-sm mb-2">DATE</h3>
-                  <p className="text-gray-300 font-pixel text-xs">15th September 2025</p>
+                  <p className="text-gray-300 font-pixel text-xs">16th September 2025</p>
                 </CardContent>
               </Card>
 
