@@ -296,7 +296,7 @@ export default function BlindDateHackathon() {
                     <p className="text-gray-300 font-pixel text-xs mb-4">Meera Surendran</p>
                     <Button
                       className="arcade-button font-pixel text-white text-xs px-6 py-3 rounded-lg"
-                      onClick={() => window.open("https://wa.me/8891240778", "_blank")}
+                      onClick={() => window.open("https://wa.me/+918891240778", "_blank")}
                     >
                       CONTACT
                     </Button>
